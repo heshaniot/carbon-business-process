@@ -43,7 +43,7 @@ public class HumanTaskDeployer extends AbstractDeployer {
 
     public void init(ConfigurationContext configurationContext) {
         int tenantId = CarbonContext.getThreadLocalCarbonContext().getTenantId();
-        log.info("Initializing HumanTask Deployer for tenant " + tenantId);
+        log.info("Initializing HumanTask Deployer for tenant " + tenantId + ".");
 
         try {
             HumanTaskDeployerServiceComponent.getTenantRegistryLoader().
